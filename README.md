@@ -1,5 +1,5 @@
 <p align="center">
-  <img src=".github/images/banner-store.webp" alt="COD Store: a cash-on-delivery store theme for WooCommerce, made for Arabic stores" width="100%">
+  <img src=".github/images/banner-store-v2.webp" alt="COD Store: a cash-on-delivery store theme for WooCommerce, made for Arabic stores" width="100%">
 </p>
 
 <p align="center">
@@ -37,7 +37,7 @@
 
 <table>
   <tr>
-    <td colspan="2"><img src=".github/images/home-store.webp" alt="Store home page"><br><b>Home</b>: search, category filters and a product grid with discount badges and an order button on every card.</td>
+    <td colspan="2"><img src=".github/images/home-store-v2.webp" alt="Store home page"><br><b>Home</b>: search, category filters and a product grid with discount badges and an order button on every card.</td>
   </tr>
   <tr>
     <td width="62%"><img src=".github/images/product-store.webp" alt="Product page with the order form"><br><b>Product page</b>: gallery, variations and the cash-on-delivery order form next to the photos.</td>
