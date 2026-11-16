@@ -45,7 +45,7 @@
   </tr>
 </table>
 
-<sub>Product images in the screenshots are simple drawings, not real products.</sub>
+<sub>Screenshots from the live demo store. Product photos are not included in the theme.</sub>
 
 ## ✨ Features
 
