@@ -1,5 +1,5 @@
 <p align="center">
-  <img src=".github/images/banner.webp" alt="COD Store: a cash-on-delivery store theme for WooCommerce, made for Arabic stores" width="100%">
+  <img src=".github/images/banner-store.webp" alt="COD Store: a cash-on-delivery store theme for WooCommerce, made for Arabic stores" width="100%">
 </p>
 
 <p align="center">
@@ -37,11 +37,11 @@
 
 <table>
   <tr>
-    <td colspan="2"><img src=".github/images/home.webp" alt="Store home page"><br><b>Home</b>: search, category filters and a product grid with discount badges and an order button on every card.</td>
+    <td colspan="2"><img src=".github/images/home-store.webp" alt="Store home page"><br><b>Home</b>: search, category filters and a product grid with discount badges and an order button on every card.</td>
   </tr>
   <tr>
-    <td width="62%"><img src=".github/images/product.webp" alt="Product page with the order form"><br><b>Product page</b>: gallery, variations and the cash-on-delivery order form next to the photos.</td>
-    <td width="38%" align="center"><img src=".github/images/phone.webp" alt="Product page on a phone" width="300"><br><b>On phones</b>: made for mobile shoppers, with an order button that stays on screen.</td>
+    <td width="62%"><img src=".github/images/product-store.webp" alt="Product page with the order form"><br><b>Product page</b>: gallery, variations and the cash-on-delivery order form next to the photos.</td>
+    <td width="38%" align="center"><img src=".github/images/phone-store.webp" alt="Product page on a phone" width="300"><br><b>On phones</b>: made for mobile shoppers, with an order button that stays on screen.</td>
   </tr>
 </table>
 
