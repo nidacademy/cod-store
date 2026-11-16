@@ -1,0 +1,55 @@
+/* Product price box (Customize > Product page > Price > Price design). */
+.hx-product .hx-product__title { margin: 0 0 14px; }
+.hx-pbox { display: grid; gap: 10px; margin: 0 0 22px; padding: 14px 16px; border: 1.5px solid color-mix(in srgb, var(--hx-badge) 22%, #fff); border-radius: 16px; background: linear-gradient(180deg, #fff 0%, color-mix(in srgb, var(--hx-badge) 5%, #fff) 100%); font-family: "Cairo", var(--hx-font); letter-spacing: 0; text-align: right; }
+.hx-pbox .hx-pp { margin: 0; }
+.hx-pbox .hx-pp__badge { padding: 5px 11px; border-radius: 999px; background: var(--hx-badge); color: #fff; box-shadow: none; animation: hx-pb-pulse 2.2s ease-in-out infinite; }
+@keyframes hx-pb-pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.07); } }
+.hx-pbox__save { display: flex; align-items: center; gap: 6px; color: #15803d; font-size: 15px; font-weight: 700; line-height: 1.4; }
+.hx-pbox__save[hidden], .hx-pbox__cd[hidden], .hx-pbox__u[hidden] { display: none; }
+.hx-pbox__save svg { flex: 0 0 auto; }
+.hx-pbox__save b { font-weight: 800; }
+.hx-pbox__cd { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 12px; border-radius: 12px; background: var(--hx-badge-bg); color: var(--hx-badge); }
+.hx-pbox__cdl { display: flex; align-items: center; gap: 6px; font-size: 15px; font-weight: 800; line-height: 1.3; }
+.hx-pbox__t { display: flex; gap: 6px; }
+.hx-pbox__u { display: grid; justify-items: center; min-width: 46px; padding: 6px 4px 4px; border-radius: 9px; background: var(--hx-badge); color: #fff; line-height: 1; }
+.hx-pbox__u b { font-size: 18px; font-weight: 800; font-variant-numeric: tabular-nums; }
+.hx-pbox__u small { margin-top: 3px; font-size: 10.5px; font-weight: 700; opacity: 0.92; }
+@media (max-width: 749px) {
+	.hx-product .hx-product__title { margin-bottom: 12px; }
+	.hx-pbox { gap: 8px; margin-bottom: 18px; padding: 12px; border-radius: 14px; }
+	.hx-pbox .hx-pp, .hx-pbox__save { justify-content: center; }
+	.hx-pbox__cd { flex-direction: column; gap: 8px; }
+}
+@media (prefers-reduced-motion: reduce) { .hx-pbox .hx-pp__badge { animation: none; } }
+
+/* More room in the price row: price on its own line on phones, old price and badge spaced on the next line */
+.hx-pbox .hx-pp { align-items: center; gap: 8px 18px; }
+.hx-pbox .hx-pp__old { margin-inline-start: 2px; }
+.hx-pbox .hx-pp__badge { padding: 5px 12px; font-size: 13px; }
+@media (max-width: 749px) {
+	.hx-pbox .hx-pp { row-gap: 6px; column-gap: 14px; }
+	.hx-pbox .hx-pp__now { flex: 0 0 100%; justify-content: center; }
+}
+
+/* "Clean & compact" price design: one price line + one slim countdown strip */
+.hx-pbox--compact { gap: 12px; padding: 0; border: 0; border-radius: 0; background: none; }
+.hx-pbox--compact .hx-pp { flex-wrap: wrap; align-items: center; gap: 6px 16px; }
+.hx-pbox--compact .hx-pp__now { flex: 0 0 auto; }
+.hx-pbox--compact .hx-pp__badge { animation: none; }
+.hx-pbox--compact .hx-pbox__save { display: none; }
+.hx-pbox--compact .hx-pbox__cd { flex-direction: row; justify-content: center; flex-wrap: wrap; gap: 4px 10px; padding: 9px 14px; border-radius: 10px; background: var(--hx-badge); color: #fff; }
+.hx-pbox--compact .hx-pbox__cdl { font-size: 14px; font-weight: 700; }
+.hx-pbox--compact .hx-pbox__cdl svg { width: 17px; height: 17px; }
+.hx-pbox--compact .hx-pbox__t { gap: 0; direction: ltr; align-items: baseline; }
+.hx-pbox--compact .hx-pbox__u { display: inline-flex; align-items: baseline; min-width: 0; padding: 0; border-radius: 0; background: none; color: #fff; }
+.hx-pbox--compact .hx-pbox__u b { font-size: 16px; font-weight: 800; }
+.hx-pbox--compact .hx-pbox__u small { display: none; }
+.hx-pbox--compact .hx-pbox__u[data-u="d"] { order: 4; margin-left: 10px; direction: rtl; }
+.hx-pbox--compact .hx-pbox__u[data-u="d"] small { display: inline; margin: 0 4px 0 0; font-size: 13px; opacity: 0.95; }
+.hx-pbox--compact .hx-pbox__u[data-u="h"]::after, .hx-pbox--compact .hx-pbox__u[data-u="m"]::after { content: ":"; margin: 0 2px; font-weight: 800; opacity: 0.85; }
+@media (max-width: 749px) {
+	.hx-pbox--compact { gap: 10px; padding: 0; }
+	.hx-pbox--compact .hx-pp { column-gap: 12px; }
+	.hx-pbox--compact .hx-pp__now { flex: 0 0 auto; }
+	.hx-pbox--compact .hx-pbox__cd { flex-direction: row; }
+}

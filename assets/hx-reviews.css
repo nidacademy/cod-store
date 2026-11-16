@@ -1,0 +1,78 @@
+/* Customer reviews (product page) */
+.hx-stars { position: relative; display: inline-block; flex: 0 0 auto; line-height: 0; vertical-align: middle; }
+.hx-stars svg { flex: 0 0 auto; width: 18px; height: 18px; fill: currentColor; }
+.hx-stars .hx-stars__bg { display: inline-flex; gap: 1px; color: #d9dce1; }
+.hx-stars .hx-stars__fg { position: absolute; top: 0; inset-inline-start: 0; display: inline-flex; gap: 1px; overflow: hidden; white-space: nowrap; color: #f5a524; }
+.hx-stars--sm svg { width: 15px; height: 15px; }
+
+.hx-rv-line { display: flex; justify-content: flex-start; align-items: center; gap: 6px; width: fit-content; max-width: 100%; margin: -6px 0 10px auto; color: var(--hx-ink); font-family: "Cairo", var(--hx-font); font-size: 14px; letter-spacing: 0; text-decoration: none; }
+.hx-rv-line b { font-weight: 800; }
+.hx-rv-line > span:last-child { color: #6b7280; text-decoration: underline; text-underline-offset: 3px; }
+
+.hx-rv { margin: 32px 0 8px; padding-top: 24px; border-top: 1px solid #eceef1; font-family: "Cairo", var(--hx-font); letter-spacing: 0; text-align: right; }
+.hx-rv__title { margin: 0 0 14px; color: var(--hx-ink); font-size: 22px; font-weight: 800; line-height: 1.4; }
+.hx-rv__sum { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: 12px 22px; padding: 16px; border: 1px solid #eceef1; border-radius: 14px; background: #fafbfc; }
+.hx-rv__avg { display: grid; justify-items: center; gap: 4px; min-width: 110px; }
+.hx-rv__avg b { color: var(--hx-ink); font-size: 40px; font-weight: 800; line-height: 1; }
+.hx-rv__avg > span:last-child { color: #6b7280; font-size: 13px; font-weight: 600; }
+.hx-rv__bars { display: grid; gap: 5px; margin: 0; padding: 0; list-style: none; }
+.hx-rv__bars li { display: grid; grid-template-columns: 34px minmax(0, 1fr) 28px; align-items: center; gap: 8px; color: #4b5563; font-size: 13px; font-weight: 700; }
+.hx-rv__bars i { height: 8px; overflow: hidden; border-radius: 99px; background: #e8eaee; }
+.hx-rv__bars em { display: block; height: 100%; border-radius: 99px; background: #f5a524; }
+.hx-rv__bars li span:last-child { color: #9aa0a6; text-align: left; }
+.hx-rv__empty { grid-column: 1 / -1; margin: 0; color: #4b5563; font-size: 15px; font-weight: 600; }
+.hx-rv__add { grid-column: 1 / -1; justify-self: start; min-height: 42px; padding: 0 18px; border: 1.5px solid var(--hx-primary); border-radius: 10px; background: #fff; color: var(--hx-primary); font: inherit; font-size: 15px; font-weight: 800; cursor: pointer; }
+.hx-rv__add:hover { background: var(--hx-primary); color: #fff; }
+
+.hx-rv__form { display: grid; gap: 10px; margin-top: 12px; padding: 16px; border: 1px solid #eceef1; border-radius: 14px; background: #fff; }
+.hx-rv__form[hidden] { display: none; }
+.hx-rv__pick { display: inline-flex; flex-direction: row-reverse; justify-content: flex-end; gap: 2px; }
+.hx-rv__pick input { position: absolute; opacity: 0; pointer-events: none; }
+.hx-rv__pick label { color: #d9dce1; font-size: 30px; line-height: 1; cursor: pointer; transition: color .12s; }
+.hx-rv__pick input:checked ~ label, .hx-rv__pick label:hover, .hx-rv__pick label:hover ~ label { color: #f5a524; }
+.hx-rv__pick input:focus-visible + label { outline: 2px solid var(--hx-primary); outline-offset: 2px; border-radius: 4px; }
+.hx-rv__in { width: 100%; box-sizing: border-box; padding: 11px 14px; border: 1.5px solid #dfe2e6; border-radius: 10px; background: #fff; color: #111827; font: inherit; font-size: 16px; }
+.hx-rv__in:focus { border-color: var(--hx-primary); outline: 0; box-shadow: 0 0 0 3px rgba(var(--hx-primary-rgb), .15); }
+.hx-rv__send { min-height: 48px; border: 0; border-radius: 10px; background: var(--hx-primary); color: #fff; font: inherit; font-size: 17px; font-weight: 800; cursor: pointer; }
+.hx-rv__send:disabled { opacity: .6; }
+.hx-rv__msg { margin: 0; color: #b91c1c; font-size: 14px; font-weight: 700; }
+.hx-rv__msg.is-ok { color: #15803d; }
+.hx-rv__form .hx-rv__in[hidden], .hx-rv__form .hx-rv__pick[hidden], .hx-rv__form [type=submit][hidden] { display: none; }
+
+.hx-rv__list { display: grid; gap: 12px; margin-top: 16px; }
+.hx-rv__card { padding: 14px 16px; border: 1px solid #eceef1; border-radius: 14px; background: #fff; }
+.hx-rv__card[hidden] { display: none; }
+.hx-rv__card header { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.hx-rv__av { flex: 0 0 38px; display: grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; background: color-mix(in srgb, var(--hx-primary) 12%, #fff); color: var(--hx-primary); font-size: 16px; font-weight: 800; }
+.hx-rv__who { flex: 1 1 auto; display: grid; min-width: 0; line-height: 1.3; }
+.hx-rv__who b { color: var(--hx-ink); font-size: 15px; font-weight: 800; }
+.hx-rv__who small { color: #6b7280; font-size: 12.5px; font-weight: 600; }
+.hx-rv__card p { margin: 0; color: #2b2f36; font-size: 15px; line-height: 1.8; }
+.hx-rv__img { display: inline-block; margin-top: 10px; border-radius: 10px; overflow: hidden; }
+.hx-rv__img img { display: block; width: 120px; height: 120px; object-fit: cover; }
+.hx-rv__more { display: block; width: 100%; min-height: 46px; margin-top: 12px; border: 1.5px solid #dfe2e6; border-radius: 10px; background: #fff; color: var(--hx-ink); font: inherit; font-size: 15px; font-weight: 800; cursor: pointer; }
+.hx-rv__more:hover { border-color: var(--hx-primary); color: var(--hx-primary); }
+
+@media (max-width: 749px) {
+	.hx-rv-line { justify-content: center; width: 100%; }
+	.hx-rv__title { font-size: 20px; text-align: center; }
+	.hx-rv__sum { grid-template-columns: 1fr; justify-items: stretch; }
+	.hx-rv__add { justify-self: stretch; }
+}
+
+/* Stars line: right under the title, right-aligned on computers, centred on phones */
+.hx-rv-line .hx-stars svg { width: 16px; height: 16px; }
+html[dir="ltr"] .hx-rv-line, html.translated-ltr .hx-rv-line { margin-left: 0; margin-right: auto; }
+@media (max-width: 749px) {
+	.hx-rv-line { justify-content: center; width: 100%; margin: -4px auto 10px; }
+}
+
+/* Reviews beside the price */
+.hx-pbox__row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 18px; }
+.hx-pbox__row .hx-pp { flex: 1 1 auto; margin: 0; }
+.hx-pbox__row .hx-rv-line { flex: 0 0 auto; width: auto; margin: 0; }
+@media (max-width: 749px) {
+	.hx-pbox__row { justify-content: center; }
+	.hx-pbox__row .hx-pp { flex-basis: 100%; }
+	.hx-pbox__row .hx-rv-line { width: auto; margin: 0 auto; }
+}
