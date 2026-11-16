@@ -20,6 +20,7 @@
   <a href="#-download">Download</a> ·
   <a href="#-screenshots">Screenshots</a> ·
   <a href="#-features">Features</a> ·
+  <a href="#-need-hosting">Hosting</a> ·
   <a href="#-install">Install</a> ·
   <a href="#-updates">Updates</a> ·
   <a href="#-follow-nid-academy">Follow</a>
@@ -64,6 +65,33 @@
 | 🔎 **Search and filters** | Home search bar and filter drawer, with load-more product grids. |
 | ✍️ **Blog** | Blog archive, single posts and sidebar in the same style. |
 | 🔄 **Updates itself** | New releases show under Dashboard → Updates. |
+
+## 🌐 Need hosting?
+
+COD Store runs on any WordPress site with WooCommerce. No site yet? We use **Hostinger** for our own sites.
+
+<a href="https://www.hostinger.com/nidacademy">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset=".github/images/hosting-dark.webp">
+    <source media="(prefers-color-scheme: light)" srcset=".github/images/hosting-light.webp">
+    <img src=".github/images/hosting-light.webp" alt="Your cash-on-delivery store in 3 steps: choose a Hostinger plan, install WordPress and WooCommerce, upload COD Store" width="100%">
+  </picture>
+</a>
+
+<details>
+<summary><b>Show the steps</b> (about 10 minutes)</summary>
+<br>
+
+1. **Choose a plan.** Open [Hostinger](https://www.hostinger.com/nidacademy) and pick a **WordPress hosting** plan. *Business* is the best fit for a store: it is faster and adds daily backups.
+2. **Create your account and pay.** 12 or 24 months gives the lowest monthly price.
+3. **Claim your domain**, for example `yourstore.com`, or connect one you already own.
+4. **Install WordPress and WooCommerce.** When asked what you want to build, choose an **online store** so WooCommerce is installed too, and skip the suggested theme. Already past this step? In hPanel go to **Websites → Add website → WordPress**, then add WooCommerce from **Plugins → Add New**.
+5. **Log in** at `yourdomain.com/wp-admin` once the domain and SSL are ready (a few minutes).
+6. **Install COD Store** with the steps below, then add your products.
+
+</details>
+
+<sub>Affiliate link: Nid Academy earns a small commission if you buy through it, at no extra cost to you.</sub>
 
 ## 🚀 Install
 
