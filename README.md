@@ -17,6 +17,7 @@
 </p>
 
 <p align="center">
+  <a href="https://www.cod-theme.com">Live demo</a> ·
   <a href="#-download">Download</a> ·
   <a href="#-screenshots">Screenshots</a> ·
   <a href="#-features">Features</a> ·
@@ -33,6 +34,8 @@
 ## ⬇ Download
 
 **[Download hx-store.zip](https://github.com/NIDACADEMY/cod-store/releases/latest/download/hx-store.zip)** (latest release), then upload it in **Appearance → Themes → Add New → Upload Theme**.
+
+**[See the live demo store](https://www.cod-theme.com)** to try the theme on a phone or computer.
 
 ## 🖼 Screenshots
 
